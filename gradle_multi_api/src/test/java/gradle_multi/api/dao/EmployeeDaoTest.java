@@ -16,6 +16,7 @@ import org.junit.runners.MethodSorters;
 
 import gradle_multi.api.AbstractTest;
 import gradle_multi.api.daoImpl.EmployeeDaoImpl;
+import gradle_multi.common.dao.EmployeeDao;
 import gradle_multi.common.dto.Department;
 import gradle_multi.common.dto.Employee;
 import gradle_multi.common.dto.State;

@@ -15,8 +15,8 @@ import javax.swing.JPanel;
 import javax.swing.JPopupMenu;
 import javax.swing.JTextField;
 
-import gradle_multi.api.dao.BoardDao;
 import gradle_multi.app.list.BoardList;
+import gradle_multi.common.dao.BoardDao;
 import gradle_multi.common.dto.Board;
 import gradle_multi.common.dto.Criteria;
 import gradle_multi.common.dto.PageMaker;

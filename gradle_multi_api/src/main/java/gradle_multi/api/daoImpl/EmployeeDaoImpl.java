@@ -8,13 +8,13 @@ import org.apache.ibatis.session.ResultContext;
 import org.apache.ibatis.session.ResultHandler;
 import org.apache.ibatis.session.SqlSession;
 
-import gradle_multi.api.dao.EmployeeDao;
 import gradle_multi.api.jdbc.MyBatisSqlSessionFactory;
+import gradle_multi.common.dao.EmployeeDao;
 import gradle_multi.common.dto.Employee;
 import gradle_multi.common.dto.State;
 
 public class EmployeeDaoImpl implements EmployeeDao {
-	private static final String namespace = "gradle_multi.api.dao.EmployeeDao";
+	private static final String namespace = "mappers.EmployeeMapper";
 
 	@Override
 	public List<Employee> selectEmployeeByAll() {

@@ -12,12 +12,12 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JPopupMenu;
 
-import gradle_multi.api.dao.DepartmentDao;
 import gradle_multi.api.daoImpl.DepartmentDaoImpl;
 import gradle_multi.app.content.AbstractPanel;
 import gradle_multi.app.content.PanelDepartment;
 import gradle_multi.app.list.AbstractList;
 import gradle_multi.app.list.DepartmentList;
+import gradle_multi.common.dao.DepartmentDao;
 import gradle_multi.common.dto.Department;
 
 @SuppressWarnings("serial")

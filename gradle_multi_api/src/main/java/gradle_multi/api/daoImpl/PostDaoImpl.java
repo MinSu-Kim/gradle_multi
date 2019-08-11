@@ -4,13 +4,13 @@ import java.util.List;
 
 import org.apache.ibatis.session.SqlSession;
 
-import gradle_multi.api.dao.PostDao;
 import gradle_multi.api.jdbc.MyBatisSqlSessionFactory;
+import gradle_multi.common.dao.PostDao;
 import gradle_multi.common.dto.Criteria;
 import gradle_multi.common.dto.Post;
 
 public class PostDaoImpl implements PostDao {
-	private static final String namespace = "gradle_multi.api.dao.PostDao";
+	private static final String namespace = "mappers.PostMapper";
 
 	@Override
 	public List<Post> selectPostByAll() {

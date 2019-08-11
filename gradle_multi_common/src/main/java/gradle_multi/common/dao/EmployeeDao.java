@@ -1,4 +1,4 @@
-package gradle_multi.api.dao;
+package gradle_multi.common.dao;
 
 import java.util.List;
 import java.util.Map;

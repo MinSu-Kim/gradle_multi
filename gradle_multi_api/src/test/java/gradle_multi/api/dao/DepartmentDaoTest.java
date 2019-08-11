@@ -11,6 +11,7 @@ import org.junit.runners.MethodSorters;
 
 import gradle_multi.api.AbstractTest;
 import gradle_multi.api.daoImpl.DepartmentDaoImpl;
+import gradle_multi.common.dao.DepartmentDao;
 import gradle_multi.common.dto.Department;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)

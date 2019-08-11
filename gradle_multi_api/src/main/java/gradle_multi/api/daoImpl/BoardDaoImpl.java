@@ -4,13 +4,13 @@ import java.util.List;
 
 import org.apache.ibatis.session.SqlSession;
 
-import gradle_multi.api.dao.BoardDao;
 import gradle_multi.api.jdbc.MyBatisSqlSessionFactory;
+import gradle_multi.common.dao.BoardDao;
 import gradle_multi.common.dto.Board;
 import gradle_multi.common.dto.Criteria;
 
 public class BoardDaoImpl implements BoardDao {
-	private static final String namespace = "gradle_multi.api.dao.BoardDao";
+	private static final String namespace = "mappers.BoardMapper";
 
 	@Override
 	public List<Board> getList() {

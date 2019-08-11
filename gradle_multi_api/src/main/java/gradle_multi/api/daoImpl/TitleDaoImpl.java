@@ -4,12 +4,12 @@ import java.util.List;
 
 import org.apache.ibatis.session.SqlSession;
 
-import gradle_multi.api.dao.TitleDao;
 import gradle_multi.api.jdbc.MyBatisSqlSessionFactory;
+import gradle_multi.common.dao.TitleDao;
 import gradle_multi.common.dto.Title;
 
 public class TitleDaoImpl implements TitleDao {
-	private static final String namespace = "gradle_multi.api.dao.TitleDao";
+	private static final String namespace = "mappers.TitleMapper";
 
 	@Override
 	public List<Title> selectTitleByAll() {

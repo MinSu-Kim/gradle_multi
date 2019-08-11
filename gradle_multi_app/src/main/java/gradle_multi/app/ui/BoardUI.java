@@ -13,10 +13,10 @@ import javax.swing.JPanel;
 import javax.swing.JPopupMenu;
 import javax.swing.border.EmptyBorder;
 
-import gradle_multi.api.dao.BoardDao;
 import gradle_multi.api.daoImpl.BoardDaoImpl;
 import gradle_multi.app.content.PanelBoard;
 import gradle_multi.app.content.PanelBoardList;
+import gradle_multi.common.dao.BoardDao;
 import gradle_multi.common.dto.Board;
 
 

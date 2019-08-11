@@ -2,12 +2,12 @@ package gradle_multi.app.ui;
 
 import java.util.List;
 
-import gradle_multi.api.dao.TitleDao;
 import gradle_multi.api.daoImpl.TitleDaoImpl;
 import gradle_multi.app.content.AbstractPanel;
 import gradle_multi.app.content.PanelTitle;
 import gradle_multi.app.list.AbstractList;
 import gradle_multi.app.list.TitleList;
+import gradle_multi.common.dao.TitleDao;
 import gradle_multi.common.dto.Title;
 
 @SuppressWarnings("serial")

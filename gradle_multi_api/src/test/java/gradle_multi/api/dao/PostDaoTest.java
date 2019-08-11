@@ -6,6 +6,7 @@ import org.junit.Test;
 
 import gradle_multi.api.AbstractTest;
 import gradle_multi.api.daoImpl.PostDaoImpl;
+import gradle_multi.common.dao.PostDao;
 import gradle_multi.common.dto.Criteria;
 import gradle_multi.common.dto.PageMaker;
 import gradle_multi.common.dto.Post;

@@ -17,8 +17,8 @@ import javax.swing.SwingConstants;
 import javax.swing.border.EmptyBorder;
 import javax.swing.border.TitledBorder;
 
-import gradle_multi.api.dao.BoardDao;
 import gradle_multi.app.ui.BoardUI;
+import gradle_multi.common.dao.BoardDao;
 import gradle_multi.common.dto.Board;
 
 @SuppressWarnings("serial")

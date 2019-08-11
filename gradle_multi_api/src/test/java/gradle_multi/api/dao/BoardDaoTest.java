@@ -9,6 +9,7 @@ import org.junit.runners.MethodSorters;
 
 import gradle_multi.api.AbstractTest;
 import gradle_multi.api.daoImpl.BoardDaoImpl;
+import gradle_multi.common.dao.BoardDao;
 import gradle_multi.common.dto.Board;
 import gradle_multi.common.dto.Criteria;
 
