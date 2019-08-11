@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="gradle_multi.api.dao.BoardDao">
+
+	<sql id="boardSql">
+	<![CDATA[
+		select bno, title, content, writer, regdate, updatedate from tbl_board
+	]]>
+	</sql>
+
+	<select id="getList" resultType="Board">
+		<include refid="boardSql"/>
+	</select>
+	
+	<insert id="insertBoard" parameterType="Board" useGeneratedKeys="true" keyProperty="bno">
+	<![CDATA[
+		insert into tbl_board(bno, title, content, writer) 
+		values (#{bno}, #{title}, #{content}, #{writer});
+	]]>
+	</insert>
+	
+	<select id="readBoard" resultType="Board">
+		<include refid="boardSql"/>
+		<![CDATA[
+		where bno = #{bno}
+		]]>
+	</select>
+	
+	<delete id="deleteBoard">
+	<![CDATA[
+		delete from tbl_board where bno = #{bno}
+	]]>
+	</delete>
+	
+	<update id="updateBoard" parameterType="Board">
+	<![CDATA[
+		UPDATE tbl_board
+	]]>
+		<set>
+			<if test="title != null">title=#{title},</if>
+			<if test="writer != null">writer=#{writer},</if>
+			<if test="content != null">content=#{content},</if>
+		</set>
+	<![CDATA[
+		WHERE bno=#{bno};
+	]]>
+	</update>
+	
+	<select id="getListCriteria" resultType="Board">
+		<include refid="boardSql"/>
+		<![CDATA[
+		order by bno desc
+		limit #{pageStart}, #{perPageNum}
+		]]>
+	</select>
+	
+	<select id="countPaging" resultType="int">
+	<![CDATA[
+		select count(bno) 
+		  from tbl_board 
+	]]>
+	</select>
+	
+	<select id="getNextBno" resultType="int">
+		<![CDATA[
+		select max(bno)+1 
+		  from tbl_board 
+	]]>
+	</select>
+
+</mapper>
