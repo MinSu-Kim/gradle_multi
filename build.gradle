@@ -42,15 +42,11 @@ project('gradle_multi_api'){
 	
 	dependencies {
 		compile project(':gradle_multi_common')
-		
-		dependencies {
-		    compile group: 'org.mybatis', name: 'mybatis', version: '3.4.6'
-			compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.11.2'
-			compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.11.2'
-			compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.47'
-			compile group: 'com.mchange', name: 'c3p0', version: '0.9.5.4'
-		}
-	
+	    compile group: 'org.mybatis', name: 'mybatis', version: '3.4.6'
+		compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.11.2'
+		compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.11.2'
+		compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.47'
+		compile group: 'com.mchange', name: 'c3p0', version: '0.9.5.4'
 	}
 	
 }
